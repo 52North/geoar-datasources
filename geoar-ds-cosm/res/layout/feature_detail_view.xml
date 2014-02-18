@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/layout"
+        android:layout_alignLeft="@id/layout"
+        android:layout_alignRight="@id/layout"
+        android:layout_alignTop="@id/layout"
+        android:alpha="0.7"
+        android:background="@android:drawable/toast_frame" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cosm_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewWikiTitle"
+                android:layout_width="wrap_content"
+                android:maxWidth="150dp"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Münster"
+                android:textSize="14sp" />
+
+ <!--             <TextView
+                android:id="@+id/textViewCosmDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textSize="12sp" 
+                android:text="12" />
+
+           <TextView
+                android:id="@+id/textViewMoral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="67 %" />
+   -->
+         </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

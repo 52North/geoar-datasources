@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="updateObservation">Abrufen</string>
+    <string name="back">Zurück</string>
+    <string name="actions">Aktionen</string>
+    <string name="time">Zeit</string>
+    <string name="date">Datum</string>
+    <string name="to">Bis</string>
+    <string name="from">Von</string>
+    <string name="details">Details</string>
+    <string name="name">Name</string>
+    <string name="offering">Offering</string>
+    <string name="service_reference">Servicereferenz</string>
+    <string name="type">Typ</string>
+    <string name="sensor_id">Sensor Id</string>
+    <string name="sensor_description">Sensorbeschreibung</string>
+    <string name="no_value"><i>Kein Wert</i></string>
+    <string name="empty_result">Leeres Ergebnis</string>
+    <string name="error_requesting_observation">Fehler beim Anfordern von Observations</string>
+
+    <string-array name="sos_predefined_intervals">
+        <item>Eigene</item>
+        <item>Spätester Tag</item>
+        <item>Späteste Woche</item>
+        <item>Spätester Monat</item>
+    </string-array>
+
+    <string name="predefined">Vordefiniert</string>
+    <string name="offering_details">Id: <i>%1$s</i>\nAnfang: <i>%2$s</i>\nEnde: <i>%3$s</i></string>
+    <string name="error_requesting_capabilities">Fehler beim Anfordern von Capabilities</string>
+    <string name="sos_post_endpoint">SOS Post Adresse</string>
+    <string name="sir_post_endpoint">SIR Post Adresse</string>
+    <string name="sos_data_source_title">SOS Datenquelle</string>
+    <string name="sir_data_source_title">SIR Datenquelle</string>
+
+</resources>

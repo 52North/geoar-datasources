@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GeoARNoiseDataSource</string>
+    <string name="no_value">No Value</string>
+    <string name="measurement">Measurement</string>
+    <string name="noise">Noise</string>
+    <string name="moral">Moral</string>
+    <string name="metadata">Metadata</string>
+    <string name="location_provider">Location Provider</string>
+    <string name="time">Time</string>
+
+</resources>

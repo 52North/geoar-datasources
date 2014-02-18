@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <!-- SIR Result -->
+
+            <ScrollView
+                android:id="@+id/scrollViewSIRResult"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/formGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/service_reference" />
+
+                    <TextView
+                        style="@style/formLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/url" />
+
+                    <TextView
+                        android:id="@+id/textViewUrl"
+                        style="@style/formView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_value" />
+
+                    <TextView
+                        style="@style/formLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/type" />
+
+                    <TextView
+                        android:id="@+id/textViewType"
+                        style="@style/formView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_value" />
+
+                    <TextView
+                        style="@style/formLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sensor_id" />
+
+                    <TextView
+                        android:id="@+id/textViewServiceSensorId"
+                        style="@style/formView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_value" />
+
+                    <TextView
+                        style="@style/formGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sensor_description" />
+
+                    <TextView
+                        android:id="@+id/textViewDescription"
+                        style="@style/formView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_value" />
+                </LinearLayout>
+            </ScrollView>
+
+            <!-- SOS Observation -->
+
+            <LinearLayout
+                android:id="@+id/layoutSOS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <org.n52.geoar.data.sos.view.SOSObservationView
+                    android:id="@+id/sosObservationView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </org.n52.geoar.data.sos.view.SOSObservationView>
+
+                <!-- Other views? -->
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

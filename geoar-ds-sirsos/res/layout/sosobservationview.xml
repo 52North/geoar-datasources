@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/formGroup"
+                android:text="@string/offering" />
+
+            <TextView
+                style="@style/formLabel"
+                android:text="@string/name" />
+
+            <LinearLayout
+                style="@style/formView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/spinnerOffering"
+                    style="@style/formView"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarOffering"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/formLabel"
+                android:text="@string/details" />
+
+            <TextView
+                android:id="@+id/textViewOfferingDetails"
+                style="@style/formView"
+                android:text="@string/no_value" />
+
+            <TextView
+                style="@style/formGroup"
+                android:text="@string/time" />
+
+            <TextView
+                style="@style/formLabel"
+                android:text="@string/from" />
+
+            <LinearLayout
+                style="@style/formView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/editTextFromDate"
+                    style="?android:attr/spinnerStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:hint="@string/date" >
+
+                    <requestFocus />
+                </EditText>
+
+                <EditText
+                    android:id="@+id/editTextFromTime"
+                    style="?android:attr/spinnerStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:hint="@string/time" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/formLabel"
+                android:text="@string/to" />
+
+            <LinearLayout
+                style="@style/formView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/editTextToDate"
+                    style="?android:attr/spinnerStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:hint="@string/date" />
+
+                <EditText
+                    android:id="@+id/editTextToTime"
+                    style="?android:attr/spinnerStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:hint="@string/time" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/formLabel"
+                android:text="@string/predefined" />
+
+            <Spinner
+                android:id="@+id/spinnerInterval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/sos_predefined_intervals" />
+
+            <TextView
+                style="@style/formGroup"
+                android:text="@string/actions" />
+
+            <LinearLayout
+                style="@style/formView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/buttonUpdateObservation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_menu_send"
+                    android:text="@string/updateObservation" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarObservation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/layoutChartObservation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </FrameLayout>
+
+        <LinearLayout
+            style="@style/formView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/buttonSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/buttonZoomIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/buttonZoomOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-" />
+
+            <ImageButton
+                android:id="@+id/buttonZoomReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_media_fullscreen" />
+        </LinearLayout>
+    </LinearLayout>
+
+</merge>

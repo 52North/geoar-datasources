@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<plugin>
+	<name>${project.name}</name>
+	<publisher>${project.organization.name}</publisher>
+	<identifier>${project.groupId}.${project.artifactId}</identifier>
+	<description>${project.description}</description>
+	<version>${project.version}</version>
+</plugin>

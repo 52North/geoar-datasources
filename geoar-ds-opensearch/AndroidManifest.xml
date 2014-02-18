@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.n52.geoar.data.opensearch"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="15" />
+
+    <application android:label="OPENSEARCH" >
+        <uses-library android:name="org.apache.commons.beanutils" />
+        <uses-library android:name="java.beans" />
+    </application>
+
+</manifest>

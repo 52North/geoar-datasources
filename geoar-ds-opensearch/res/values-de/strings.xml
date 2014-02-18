@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="no_value">Kein Wert</string>
+    <string name="measurement">Messung</string>
+    <string name="noise">Lautstärke</string>
+    <string name="moral">Moral</string>
+    <string name="metadata">Metadaten</string>
+    <string name="location_provider">Positionsbestimmung</string>
+    <string name="time">Zeit</string>
+
+</resources>

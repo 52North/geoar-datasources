@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/formGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/measurement" />
+
+    <TextView
+        style="@style/formLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/noise" />
+
+    <TextView
+        android:id="@+id/textViewNoise"
+        style="@style/formView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_value" />
+
+    <TextView
+        style="@style/formLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moral" />
+
+    <TextView
+        android:id="@+id/textViewMoral"
+        style="@style/formView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_value" />
+
+    <TextView
+        style="@style/formGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/metadata" />
+
+    <TextView
+        style="@style/formLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/location_provider" />
+
+    <TextView
+        android:id="@+id/textViewLocationProvider"
+        style="@style/formView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_value" />
+
+    <TextView
+        style="@style/formLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        style="@style/formView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_value" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:src="@drawable/noisedroid" />
+
+</LinearLayout>

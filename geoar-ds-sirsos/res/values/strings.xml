@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="updateObservation">Request</string>
+    <string name="back">Back</string>
+    <string name="actions">Actions</string>
+    <string name="time">Time</string>
+    <string name="date">Date</string>
+    <string name="to">To</string>
+    <string name="from">From</string>
+    <string name="details">Details</string>
+    <string name="name">Name</string>
+    <string name="offering">Offering</string>
+    <string name="service_reference">Service Reference</string>
+    <string name="type">Type</string>
+    <string name="url">URL</string>
+    <string name="sensor_id">Sensor Id</string>
+    <string name="sensor_description">Sensor Description</string>
+    <string name="description">Description</string>
+    <string name="id">Id</string>
+    <string name="no_value"><i>No Value</i></string>
+    <string name="empty_result">Empty result</string>
+    <string name="error_requesting_observation">Error requesting observation</string>
+
+    <string-array name="sos_predefined_intervals">
+        <item>Custom</item>
+        <item>Latest Day</item>
+        <item>Latest Week</item>
+        <item>Latest Month</item>
+    </string-array>
+
+    <string name="predefined">Predefined</string>
+    <string name="offering_details">Id: <i>%1$s</i>\nBegin: <i>%2$s</i>\nEnd: <i>%3$s</i></string>
+    <string name="error_requesting_capabilities">Error requesting capabilities</string>
+    <string name="sos_post_endpoint">SOS Post Endpoint</string>
+    <string name="sir_post_endpoint">SIR Post Endpoint</string>
+    <string name="sos_data_source_title">SOS Data Source</string>
+    <string name="sir_data_source_title">SIR Data Source</string>
+</resources>
