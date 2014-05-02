@@ -6,6 +6,10 @@ This repository provides a collection of data sources for the geolocation-based 
 
 https://wiki.52north.org/bin/view/Projects/GeoARDatasource
 
+## Development
+
+If you want to use these datasources, you have to build them manually and install them into your Maven local repository so that the dependencies can be resolved (git clone, then ``mvn clean install``). Then you can add a datasource as a dependencies in the geoar-app project.
+
 ## Datasources
 
 * SIR/SOS Datasource: Discover sensors and view their data based on the Sensor Web services SIR and SOS > https://wiki.52north.org/bin/view/Projects/GeoARDatasourceSirSos
@@ -21,4 +25,4 @@ Used libraries are listed in the NOTICE files of each project.
 
 ## Contact
 
-Daniel Nüst (d.nuest@52north.org) 
+Daniel Nï¿½st (d.nuest@52north.org) 
